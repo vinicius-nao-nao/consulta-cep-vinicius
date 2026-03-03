@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Consulta de CEP e CNPJ</title>
+    <!-- Link para o arquivo de estilos CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Importa a fonte do Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <h1>Consulta Rápida</h1>
+        <p class="subtitle">Consulte endereços por CEP ou informações de empresas por CNPJ.</p>
+
+        <div class="search-type">
+            <label>
+                <input type="radio" name="tipoBusca" value="cep" checked> CEP
+            </label>
+            <label>
+                <input type="radio" name="tipoBusca" value="cnpj"> CNPJ
+            </label>
+        </div>
+
+        <div class="search-box">
+            <input type="text" id="searchInput" placeholder="Digite o CEP (apenas números)">
+            <button onclick="realizarBusca()">Buscar</button>
+        </div>
+        
+        <div id="resultado">
+            <!-- O resultado da busca aparecerá aqui -->
+        </div>
+    </div>
+
+    <!-- Link para o arquivo JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
